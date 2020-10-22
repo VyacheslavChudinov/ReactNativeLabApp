@@ -12,29 +12,28 @@ import {
   StyleSheet,
   ScrollView,
   View,
-  Text,
-  StatusBar,
-	Button,
 } from 'react-native';
 
 import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-import {
 	colors,
+	Text,
+	Button,
 	ThemeProvider
 } from 'react-native-elements';
+
+const theme = {
+  colors: {
+    ...Platform.select({
+      default: colors.platform.android,
+      ios: colors.platform.ios,
+    }),
+	},
+};
 
 const App: () => React$Node = () => {
   return (
     <>
 			<ThemeProvider theme={theme}>
-				<StatusBar barStyle="dark-content" />
 				<SafeAreaView>
 					<ScrollView contentInsetAdjustmentBehavior="automatic">
 						<View>
@@ -46,15 +45,6 @@ const App: () => React$Node = () => {
 			</ThemeProvider>
 		</>
   );
-};
-
-const theme = {
-  colors: {
-    ...Platform.select({
-      default: colors.platform.android,
-      ios: colors.platform.ios,
-    }),
-  },
 };
 
 export default App;
