@@ -1,4 +1,4 @@
-package com.labapp;
+package rn.lab.app;
 
 import com.facebook.react.ReactActivity;
 

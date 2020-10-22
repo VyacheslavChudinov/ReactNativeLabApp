@@ -1,0 +1,18 @@
+default_platform(:android)
+
+platform :android do
+
+  desc "Deploy to Firebase App Distribution"
+  lane :firebase_distribution do
+		gradle(
+      task: "assembleRelease"
+    )
+    firebase_app_distribution(
+      app: ENV["FIREBASE_APP_ID"],
+      firebase_cli_token: ENV["FIREBASE_CLI_TOKEN"],
+			apk_path: lane_context[SharedValues::GRADLE_APK_OUTPUT_PATH],
+      groups: "",
+      release_notes: "Git commit: #{last_git_commit[:abbreviated_commit_hash]}",
+    )
+  end
+end

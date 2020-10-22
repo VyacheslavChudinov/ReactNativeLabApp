@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1064810063895",
+    "firebase_url": "https://rnlabapp.firebaseio.com",
+    "project_id": "rnlabapp",
+    "storage_bucket": "rnlabapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064810063895:android:9a85a7690a5086e5729452",
+        "android_client_info": {
+          "package_name": "rn.lab.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1064810063895-54aoj9vjp91ngae8bu2e7vtq340d5dsn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiFs7OKO9ejrF2aycKZvbw8-eAksXKUx0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1064810063895-54aoj9vjp91ngae8bu2e7vtq340d5dsn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
