@@ -71,6 +71,19 @@
 		<string>Octicons.ttf</string>
 		<string>SimpleLineIcons.ttf</string>
 		<string>Zocial.ttf</string>
+		<string>Montserrat-Bold.ttf</string>
+		<string>SFProRounded-Black.otf</string>
+		<string>SFProRounded-Bold.otf</string>
+		<string>SFProRounded-Heavy.otf</string>
+		<string>SFProRounded-Light.otf</string>
+		<string>SFProRounded-Medium.otf</string>
+		<string>SFProRounded-Regular.otf</string>
+		<string>SFProRounded-Semibold.otf</string>
+		<string>SFProRounded-Thin.otf</string>
+		<string>SFProRounded-Ultralight.otf</string>
+		<string>Courier Prime Code Italic.ttf</string>
+		<string>Courier Prime Code.ttf</string>
+		<string>Poppins-Black.otf</string>
 	</array>
 </dict>
 </plist>
