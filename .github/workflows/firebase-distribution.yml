@@ -1,7 +1,7 @@
 name: Distribute to firebase
 
 on:
-  workflow_dispatch:
+  push:
 
 jobs:
   distribute:
@@ -18,9 +18,8 @@ jobs:
           yarn global add firebase-tools
           echo "::add-path::$(yarn global bin)"
       - name: setup fastlane
+        working-directory: android
         run: bundle install
-      - name: bundle update
-        run: bundle update
       - name: distribute to firebase
         working-directory: android
         run: bundle exec fastlane android firebase_distribution
